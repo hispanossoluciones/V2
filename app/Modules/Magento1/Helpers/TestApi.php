@@ -11,9 +11,9 @@ class TestApi extends Api
     public function __construct()
     {        
         $config=array();
-        $this->hostname = "magentov1.dev";
-        $this->login = "testApi";
-        $this->password = "testApi";
+        $this->hostname = "magentov1.dev"; //your MAgento SOAP host
+        $this->login = "testApi"; //your MAgento SOAP user
+        $this->password = "testApi"; //your MAgento SOAP secret
         $this->proxy = new \SoapClient('http://'.$this->hostname.'/api/soap/?wsdl', array('trace'=>1));      
     }     
 
