@@ -13,7 +13,7 @@ class TestApi extends Api
         $config=array();
         $this->hostname = "magentov1.dev"; //your MAgento SOAP host
         $this->login = "testApi"; //your MAgento SOAP user
-        $this->password = "testApi"; //your MAgento SOAP secret
+        $this->password = "testApi"; //your Magento SOAP secret
         $this->proxy = new \SoapClient('http://'.$this->hostname.'/api/soap/?wsdl', array('trace'=>1));      
     }     
 
