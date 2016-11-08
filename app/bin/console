@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php 
+/**
+ * 	 Ejecutable de los comandos
+ *	@author Jose Angel Delgado <esojangel@gmail.com>
+ */
+require __DIR__."/../etc/kernel.php";
+
+\V2\Core\Commands\Console::make();
+
